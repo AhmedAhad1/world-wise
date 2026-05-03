@@ -1,14 +1,13 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
 import PageNav from "../components/PageNav";
 
-const Pricing = () => {
+function PageNotFound() {
   return (
     <div>
       <PageNav />
-      pricing
+      PageNotFound
     </div>
   );
-};
+}
 
-export default Pricing;
+export default PageNotFound;

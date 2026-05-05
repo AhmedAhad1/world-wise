@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./CityItem.module.css";
 const formatDate = (date) =>
   new Intl.DateTimeFormat("en", {

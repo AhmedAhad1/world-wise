@@ -9,6 +9,7 @@ import CityList from "./components/CityList";
 import { useCityFetch } from "./custom-hooks/UseCityFetch";
 import { useEffect } from "react";
 import { useState } from "react";
+import CountryList from "./components/CountryList";
 
 const BASE_URL = `http://localhost:3000`;
 
@@ -50,7 +51,10 @@ const App = () => {
               path="cities"
               element={<CityList data={data} isLoading={isLoading} />}
             />
-            <Route path="countries" element={<p>Countries</p>} />
+            <Route
+              path="countries"
+              element={<CountryList data={data} isLoading={isLoading} />}
+            />
           </Route>
           <Route path="product" element={<Product />} />
           <Route path="pricing" element={<Pricing />} />

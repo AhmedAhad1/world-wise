@@ -6,10 +6,10 @@ import PageNotFound from "./pages/PageNotFound";
 import AppLayout from "./pages/AppLayout";
 import Login from "./pages/Login";
 import CityList from "./components/CityList";
-import { useCityFetch } from "./custom-hooks/UseCityFetch";
 import { useEffect } from "react";
 import { useState } from "react";
 import CountryList from "./components/CountryList";
+import City from "./components/City";
 
 const BASE_URL = `http://localhost:3000`;
 
@@ -51,6 +51,8 @@ const App = () => {
               path="cities"
               element={<CityList data={data} isLoading={isLoading} />}
             />
+
+            <Route path="cities/:id" element={<City />} />
             <Route
               path="countries"
               element={<CountryList data={data} isLoading={isLoading} />}

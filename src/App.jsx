@@ -11,8 +11,15 @@ const App = () => {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="app" element={<AppLayout />} />
+          {/* <Route path="/" element={<Homepage />} /> */}
+
+          <Route index element={<Homepage />} />
+          <Route path="app" element={<AppLayout />}>
+            {/* when u write index u dont write path */}
+            <Route index element={<p>Countries</p>} />
+            <Route path="cities" element={<p>Cities</p>} />
+            <Route path="countries" element={<p>Countries</p>} />
+          </Route>
           <Route path="product" element={<Product />} />
           <Route path="pricing" element={<Pricing />} />
           <Route path="login" element={<Login />} />

@@ -10,6 +10,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import CountryList from "./components/CountryList";
 import City from "./components/City";
+import Form from "./components/Form";
 
 const BASE_URL = `http://localhost:3000`;
 
@@ -57,6 +58,7 @@ const App = () => {
               path="countries"
               element={<CountryList data={data} isLoading={isLoading} />}
             />
+            <Route path="form" element={<Form />} />
           </Route>
           <Route path="product" element={<Product />} />
           <Route path="pricing" element={<Pricing />} />

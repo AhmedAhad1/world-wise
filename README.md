@@ -5,3 +5,5 @@
  2. useParams
  3. const [searchParams,setSearchParams]= useSearchParams()
    searchParams.get(`${urlVariableName}`)
+ 4. nested routing && index routing
+ 5..Outlet component

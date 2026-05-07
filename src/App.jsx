@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import Pricing from "./pages/Pricing";
 import Product from "./pages/Product";
@@ -44,10 +44,8 @@ const App = () => {
           <Route index element={<Homepage />} />
           <Route path="app" element={<AppLayout />}>
             {/* when u write index u dont write path */}
-            <Route
-              index
-              element={<CityList data={data} isLoading={isLoading} />}
-            />
+            {/* Navigate component used to redirect u from the route. so if u go to app it wiil redirect u to /app/cities */}
+            <Route index element={<Navigate replace to={"cities"} />} />
             <Route
               path="cities"
               element={<CityList data={data} isLoading={isLoading} />}

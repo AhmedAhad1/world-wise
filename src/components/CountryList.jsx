@@ -3,11 +3,10 @@ import Spinner from "./Spinner";
 import Message from "./Message";
 import styles from "./CountryList.module.css";
 import CountryItem from "./CountryItem";
-import { useContext } from "react";
-import { CitiesContext } from "../contexts/CitiesContext";
+import { useCities } from "../contexts/CitiesContext";
 
 const CountryList = () => {
-  const { data, isLoading } = useContext(CitiesContext);
+  const { data, isLoading } = useCities();
   if (isLoading) return <Spinner />;
   if (!data.length) return <Message message={"Add a city"} />;
 

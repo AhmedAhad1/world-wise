@@ -1,10 +1,11 @@
 import { createContext } from "react";
+import { useContext } from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 
 const BASE_URL = `http://localhost:3000`;
 
-export const CitiesContext = createContext();
+const CitiesContext = createContext();
 
 const CitiesContextProvider = ({ children }) => {
   const [data, setData] = useState([]);
@@ -34,4 +35,11 @@ const CitiesContextProvider = ({ children }) => {
   );
 };
 
-export default CitiesContextProvider;
+function useCities() {
+  const context = useContext(CitiesContext);
+  if (!context) throw new Error("Error getting context");
+
+  return context;
+}
+
+export { CitiesContextProvider, useCities };

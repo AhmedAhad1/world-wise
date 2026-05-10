@@ -24,9 +24,9 @@ const App = () => {
             <Route path="app" element={<AppLayout />}>
               {/* when u write index u dont write path */}
               {/* Navigate component used to redirect u from the route. so if u go to app it wiil redirect u to /app/cities */}
-              <Route index element={<Navigate replace to={"cities"} />} />
+              <Route index element={<Navigate replace to={"cities"} />} />{" "}
+              {/* replace helps you to go back 1 step to the parent history*/}
               <Route path="cities" element={<CityList />} />
-
               <Route path="cities/:id" element={<City />} />
               <Route path="countries" element={<CountryList />} />
               <Route path="form" element={<Form />} />

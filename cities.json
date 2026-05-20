@@ -10,7 +10,7 @@
         "lat": 38.727881642324164,
         "lng": -9.140900099907554
       },
-      "id": 73930385
+      "id": "73930385"
     },
     {
       "cityName": "Madrid",
@@ -22,7 +22,7 @@
         "lat": 40.46635901755316,
         "lng": -3.7133789062500004
       },
-      "id": 17806751
+      "id": "17806751"
     },
     {
       "cityName": "Berlin",
@@ -34,7 +34,116 @@
         "lat": 52.53586782505711,
         "lng": 13.376933665713324
       },
-      "id": 98443197
+      "id": "98443197"
+    },
+    {
+      "cityName": "Timbuktu",
+      "country": "",
+      "emoji": "🇲🇱",
+      "date": "2026-05-20T09:51:49.503Z",
+      "notes": "",
+      "position": {
+        "lat": "19.425698939190685",
+        "lng": "-1.4773397558749382"
+      },
+      "id": "S7NISCi0G9M"
+    },
+    {
+      "cityName": "Benafigos",
+      "country": "",
+      "emoji": "🇪🇸",
+      "date": "2026-05-20T10:02:23.951Z",
+      "notes": "",
+      "position": {
+        "lat": "40.28723781032618",
+        "lng": "-0.20874023437500003"
+      },
+      "id": "k2WzQzOUZMQ"
+    },
+    {
+      "cityName": "Covaleda",
+      "country": "",
+      "emoji": "🇪🇸",
+      "date": "2026-05-20T10:04:39.920Z",
+      "notes": "",
+      "position": {
+        "lat": "41.97523056528055",
+        "lng": "-2.867431640625"
+      },
+      "id": "kXkFi0A9Nwg"
+    },
+    {
+      "cityName": "Villalengua",
+      "country": "",
+      "emoji": "🇪🇸",
+      "date": "2026-05-20T10:06:24.395Z",
+      "notes": "",
+      "position": {
+        "lat": "41.4374678922435",
+        "lng": "-1.8896484375000002"
+      },
+      "id": "GIV-h-KJcJg"
+    },
+    {
+      "cityName": "Comun de Sepulveda y Riaza",
+      "country": "",
+      "emoji": "🇪🇸",
+      "date": "2026-05-20T10:06:40.933Z",
+      "notes": "",
+      "position": {
+        "lat": "41.31817987981534",
+        "lng": "-3.4661865234375004"
+      },
+      "id": "dqFLrclZeUo"
+    },
+    {
+      "cityName": "Piraces",
+      "country": "",
+      "emoji": "🇪🇸",
+      "date": "2026-05-20T10:07:57.714Z",
+      "notes": "",
+      "position": {
+        "lat": "42.00816088235809",
+        "lng": "-0.29663085937500006"
+      },
+      "id": "rWfHanOxt6g"
+    },
+    {
+      "cityName": "Canal de Berdun",
+      "country": "",
+      "emoji": "🇪🇸",
+      "date": "2026-05-20T10:08:10.157Z",
+      "notes": "",
+      "position": {
+        "lat": "42.669897902140356",
+        "lng": "-0.8679199218750001"
+      },
+      "id": "t6B94_QUAEg"
+    },
+    {
+      "cityName": "Campagna-de-Sault",
+      "country": "",
+      "emoji": "🇫🇷",
+      "date": "2026-05-20T10:08:14.665Z",
+      "notes": "",
+      "position": {
+        "lat": "42.75432215942185",
+        "lng": "2.0434570312500004"
+      },
+      "id": "-jgm6lMH3_4"
+    },
+    {
+      "cityName": "Monties",
+      "country": "",
+      "emoji": "🇫🇷",
+      "date": "2026-05-20T10:08:33.456Z",
+      "notes": "",
+      "position": {
+        "lat": "43.39664130890478",
+        "lng": "0.6866455078125001"
+      },
+      "id": "JB6hGzrtj7E"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
